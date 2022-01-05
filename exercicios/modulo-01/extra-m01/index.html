@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Módulo 1</title>
+
+    <style>
+        body {
+            background-color: rgb(35, 35, 35); 
+            color: white;
+        }
+
+        mark {
+            background-color: limegreen;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Módulo 1 do curso de HTML e CSS</h1> <br> <br>
+
+    <h2>PARÁGRAFOS</h2>
+
+    <p>Esta página contém um apurado de todo o conteúdo estudado no módulo 1 do curso de HTML e CSS do Curso em Vídeo, ministrado pelo professor Gustavo Guanabara.</p> <br>
+
+
+    <h2>SÍMBOLOS</h2>
+
+    <p>
+        Junte o "&" com o restante do conteúdo para formar o símbolo: <br>
+
+        &lt; ... & lt; ... less than <br>
+        &gt; ... & gt; ... greater than <br>
+        &reg; ... & reg; <br>
+        &copy; ... & copy; <br>
+        &trade; ... & trade; <br>
+        &euro; ... & euro; <br>
+        &pound; ... & pound; <br>
+        &yen; ... & yen; <br>
+        &cent; ... & cent; <br>
+        &Delta; ... & Delta; <br>
+        &uarr; ... & uarr; <br>
+    </p> <br>
+
+
+    <h2>EMOJIS</h2>
+
+    <p>
+        Utilize o site 
+        <a href="https://emojipedia.org/" rel="_blank" target="external">Emojipedia</a> 
+        para buscar emojis. Adicione-os inserindo "&#x" + código_do_emoji que tem no site. Tudo junto. <br>
+        Exemplo: &#x1F596; (&#x 1F596;)
+    </p> <br>
+
+
+    <h2>IMAGENS</h2>
+
+    <p>
+        src = Local onde o arquivo está armazenado e seu nome<br>
+        alt = Descrição do conteúdo <br>
+        width = Largura da área de conteúdo de um elemento <br> <br>
+        
+        A primeira imagem está armazenada localmente, já a segunda está em uma página de terceiros. <br>
+        Recomendação: Utilizar a imagem já com o tamanho correto.
+    </p>
+
+    <img src="imagens/logo-html.png" alt="Logo HTML" width="120">
+    <img src="https://logodownload.org/wp-content/uploads/2017/04/css-3-logo-1.png" width="120"> <br> <br>
+
+
+    <h2>IMAGENS DINÂMICAS</h2>
+    
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture> <br>
+
+
+    <h2>FAVICON</h2>
+
+    <p>Ícone de favorito que fica ao lado do título da página. Utilize o site 
+        <a href="https://favicon.io/" rel="_blank" target="external">favicon.io</a>
+    para criar um ícone. <br> Para adicionar o ícone, use a tag "link" dentro da tag "head".
+    </p> <br>
+
+
+    <h2>FORMATAÇÃO</h2>
+
+    <h3>Negrito / Destaque</h3>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica). <br> 
+        Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica). </p>
+
+    <h3>Itálico / Ênfase</h3>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica). <br>
+        Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica). </p>
+
+    <h3>Texto marcado</h3>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK. <br>
+        É possível alterar a cor do "mark" utilizando "background-color". </p>
+
+    <h3>Texto grande e pequeno</h3>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+
+    <h3>Texto deletado</h3>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+
+    <h3>Texto inserido</h3>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. <br>
+        Existe também o <u>sublinhado</u> com a tag U (não semântica). </p>
+
+    <h3>Texto sobrescrito</h3>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3.</p>
+    
+    <h3>Texto subscrito</h3>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O.</p> 
+
+    <h3>Código-fonte / Pré-formatação</h3>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <h3>Citações simples</h3>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+
+    <h3>Citações completas</h3>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&pg=PA17&dq=HTML&hl=pt-BR&sa=X&ved=0ahUKEwjH5-PevNboAhVNIbkGHcoxCOgQ6AEIOjAC#v=onepage&q=HTML&f=false">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+
+    <h3>Abreviações</h3>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    
+    <h3>Texto invertido</h3>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p> <br>
+
+
+    <h2>LISTAS</h2>
+
+    <h3>Lista ordenada (ol)</h3>
+    <ol type="1" start="5">
+        <li>Utilize o parâmetro "type" para alterar a representação dos índices</li>
+        <li>Types aceitos: 1, A, a, I, i</li>
+        <li>O parâmetro "start" serve para iniciar a contagem com o valor desejado, exemplo: 5 invés de 1</li>
+    </ol>
+
+    <h3>Lista não ordenada (ul)</h3>
+    <ul type="circle">
+        <li>Também é possível alterar o "type"</li>
+        <li>Types aceitos: disc, circle, square</li>
+        <li>Fechar a tag "li" é opcional
+    </ul>
+
+    <h3>Lista mista</h3>
+    <ol type="I">
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+
+    <h3>Lista de definições</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+    </dl> <br>
+
+
+    <h2>LINKS</h2>
+
+    <h3>Links Externos</h3>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a>. Será aberto em outra guia. Ideal para abrir site de terceiros.</p>
+
+    <h3>Links Internos</h3>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="index02.html" rel="next" target="_self">segunda página</a>. Será aberto na mesma guia. Ideal para páginas do seu próprio site.</p>
+
+    <h3>Links para Download</h3>
+    <P><a href="apostilas/apostila-links.pdf" download="apostila-links.pdf" type="application/pdf">Baixar a apostila em PDF</a></p>
+
+    <h4>Alguns media types usados:</h4>
+    <ul>
+        <li>application/zip</li>
+        <li>text/html</li>
+        <li>text/css</li>
+        <li>text/javascript</li>
+        <li>video/mp4</li>
+        <li>video/H264</li>
+        <li>video/JPEG</li>
+        <li>audio/aac</li>
+        <li>audio/mpeg</li>
+        <li>font/ttf</li>
+        <li>image/jpeg</li>
+        <li>image/png</li>
+        <li>application/pdf</li>
+    </ul>
+
+    <p>Mias types de âncora de hypertext estão na lista oficial da <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">IANA.org</a> </p>
+
+    <h4>Natureza dos Links (rel="")</h4>
+    <ul>
+        <li>next: indica que o link é para a próxima parte do documento atual</li>
+        <li>prev: prev indica que o link é para a parte anterior do documento atual</li>
+        <li>author: indica que é um link para o site do autor do artigo atual</li>
+        <li>external: indica que é um link para outro site que não faz parte do site atual</li>
+        <li>nofollow: indica que é um link para um site não endossado, como um link pago</li>
+    </ul> <br>
+
+
+    <h2>ÁUDIO</h2>
+
+    <h3>Reproduzir áudios em HTML5</h3>
+
+    <p>Há 3 fortatos de arquivo configurados no documento. O navegador reproduzirá o primeiro que for compatível com ele. (mp3, ogg, wav).
+        Caso o navegador não seja compatível com nenhum, será apresentando uma mensagem dando a oportunidade do usuário baixar o áudio.</p>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio> <br>
+
+    <h2>VÍDEOS</h2>
+
+    <h3>Inserindo vídeos hospedados localmente</h3>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="560" poster="imagens/limoes-capa.png" controls autoplay loop>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h3>Inserindo vídeos do YouTube</h3>
+    <p>Você pode abrir o vídeo no YouTube, buscar por COMPARTILHAR e depois INCORPORAR para extrair o código html já pronto pro uso.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SM6DQ8Y11G0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h3>Inserindo vídeos do Vimeo</h3>
+    <iframe src="https://player.vimeo.com/video/197093965?color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> <br>
+
+
+    <h2>CSS INLINE</h2>
+
+    <p>Técnica para adicionar os estilos nas próximas linhas. Em tags específicas. Separa com ponto e vírgula.</p>
+
+    <h3 style="color: rgb(116, 116, 170); font-size: 1.5em; background-color: rgb(187, 221, 255);">Capítulo 1</h3>
+    <p style="text-align: justify; font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus blanditiis earum molestiae quasi, repellendus quis assumenda nesciunt quo, ullam animi aspernatur deserunt aliquam deleniti totam aut culpa dolorem reprehenderit facere?</p> <br>
+
+
+    <h2>CSS INTERNO/LOCAL</h2>
+
+    <p>Adiciona a tag style dentro da tag head. Todos os estilos serão trabalhados dentro desse style. O background-color dessa página inteira foi inserido lá.</p> <br>
+
+
+    <h2>CSS EXTERNO</h2>
+
+    <p>É criado um arquivo novo, do tipo .css, para adicionar todos os estilos.</p>
+    <p>Para fazer a referência ao arquivo .css, escreva "link rel="stylesheet" href="style.css" entre tags, dentro do head.</p>
+    <p>Várias páginas html podem usar o mesmo arquivo style.css</p>
+
+</body>
+</html>
